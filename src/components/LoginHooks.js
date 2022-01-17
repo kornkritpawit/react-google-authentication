@@ -4,11 +4,14 @@ import { useGoogleLogin } from 'react-google-login';
 // refresh token
 import { refreshTokenSetup } from '../utils/refreshToken';
 
-const clientId =
-  '707788443358-u05p46nssla3l8tmn58tpo9r5sommgks.apps.googleusercontent.com';
+// const clientId =  '707788443358-u05p46nssla3l8tmn58tpo9r5sommgks.apps.googleusercontent.com';
+
+  const clientId = '200595892077-kgjvdsjavvp90b2ap1s3gc312t5n1iv4.apps.googleusercontent.com';
+
 
 function LoginHooks() {
   const onSuccess = (res) => {
+    console.log(res)
     console.log('Login Success: currentUser:', res.profileObj);
     alert(
       `Logged in successfully welcome ${res.profileObj.name} 😍. \n See console for full profile object.`
@@ -28,7 +31,7 @@ function LoginHooks() {
     onFailure,
     clientId,
     isSignedIn: true,
-    accessType: 'offline',
+    // accessType: 'offline',
     // responseType: 'code',
     // prompt: 'consent',
   });

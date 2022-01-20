@@ -2,7 +2,7 @@ import React from 'react';
 import { GoogleLogout } from 'react-google-login';
 
 // const clientId ='707788443358-u05p46nssla3l8tmn58tpo9r5sommgks.apps.googleusercontent.com';
-// const clientId = '200595892077-kgjvdsjavvp90b2ap1s3gc312t5n1iv4.apps.googleusercontent.com';
+const clientId = '200595892077-kgjvdsjavvp90b2ap1s3gc312t5n1iv4.apps.googleusercontent.com';
 
 
 function Logout() {
